@@ -33,6 +33,12 @@ The demo shows movement with and without collision detection. Within Unity, you 
 
 Finally, it should be mentioned that this is a project that has implemented simple rep/req communication.
 
-## Contacts
+## :information_source: Contacts
 
 Martin.Juricek1@vutbr.cz
+
+:red_circle: Brno University of Technology,
+
+:large_blue_circle: Faculty of Mechanical Engineering,
+
+:computer: Institute of Automation and Computer Science
