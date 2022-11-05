@@ -7,6 +7,7 @@ The actual demonstration is then implemented in Python where five targets are se
 ## How to start the simulation demo?
 In the Unity project section, you can download the [**Robot.unitypackage**](https://github.com/Steigner/Unity_UR3_Levenberg-Marquardt/blob/main/Unity/Robot.unitypackage), when you download it and then run it in an open window, you will see a menu to import it into your project. It is also an integral part of the NetMQ library assignment. As part of the project I downloaded NuGetForUnity. Its installation can be easily handled by following the steps: 
 
+[NuGetForUnity](https://github.com/GlitchEnzo/NuGetForUnity)
 Link: https://github.com/GlitchEnzo/NuGetForUnity#how-do-i-install-nugetforunity
 
 Then, following the instructions in the repository, download the **NetMQ** nuget package and the **Unity part is ready**.
