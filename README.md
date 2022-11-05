@@ -4,6 +4,15 @@ In this project, an Inverse Kinematics based on the Levenberg-Marquardt method w
 
 The actual demonstration is then implemented in Python where five targets are selected both their rotational and translational part. The scripts can be very easily modularized and used to solve a simulation of a problem. For deployment in reality, it is then necessary to complete the communication with the robot.
 
+```javascript
+Main Software
+------------------------------------
+| Unity version 2022.1.16f1
+| Python version 3.10
+| NuGetForUnity version 3.0.5
+| ZeroMQ
+```
+
 ## How to start the simulation demo?
 In the Unity project section, you can download the [**Robot.unitypackage**](https://github.com/Steigner/Unity_UR3_Levenberg-Marquardt/blob/main/Unity/Robot.unitypackage), when you download it and then run it in an open window, you will see a menu to import it into your project. It is also an integral part of the NetMQ library assignment. 
 
