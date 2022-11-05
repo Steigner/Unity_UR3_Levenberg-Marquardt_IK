@@ -11,7 +11,7 @@ Link: https://github.com/GlitchEnzo/NuGetForUnity#how-do-i-install-nugetforunity
 
 Then, following the instructions in the repository, download the **NetMQ** nuget package and the **Unity part is ready**.
 
-I have also added the necessary files and libraries to the repository, which you can simply add to your project by exploring the [**Assets folder**](https://github.com/Steigner/Unity_UR3_Levenberg-Marquardt/tree/main/Unity/Assets).
+I have also added the necessary files and libraries to the repository, which you can simply add to your project by exploring the [**Assets folder**](https://github.com/Steigner/Unity_UR3_Levenberg-Marquardt/tree/main/Unity/Assets). Personally, I strongly recommend using **.unitypackage** due to the fact that you need to load a script Joint.cs for each joint in your project and add **rigibody** and **boxcollider** for collision detection.
 
 The next part is Python, additional libraries were used in the project, so if you use Poetry, you can easily get everything, if you use PIP, Conda or other package manager, just get the libraries from [**pyproject.toml**](https://github.com/Steigner/Unity_UR3_Levenberg-Marquardt/blob/main/Python/Inverse_Kinematics/pyproject.toml).
 
