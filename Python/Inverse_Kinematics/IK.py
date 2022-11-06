@@ -16,7 +16,7 @@ class IK_LM(object):
         """
         self.f_new = dill.load(open("Jacobian", "rb"))
         
-    def LM(self) -> np.array:
+    def LM(self) -> np.ndarray:
         """
         Compute IK depands on demo trajectory.
 
@@ -32,6 +32,7 @@ class IK_LM(object):
             a, angles = self.__compute(angles, p, r)
             out = np.r_[out, a]
 
+        print(type(out))
         return out
 
     def demo(self, target: int) -> list:
@@ -71,7 +72,7 @@ class IK_LM(object):
             case _:
                 raise ("No exist target")
 
-    def __J(self, th1, th2, th3, th4, th5, th6) -> np.array:
+    def __J(self, th1, th2, th3, th4, th5, th6) -> np.ndarray:
         """
         Computation Jacobian matrix for UR3 by defined angles[rad]        
         
@@ -79,7 +80,7 @@ class IK_LM(object):
         """
         return self.f_new(th1, th2, th3, th4, th5, th6).astype('float64')
 
-    def __FK(self, th) -> np.array:
+    def __FK(self, th: np.ndarray) -> np.ndarray:
         """
         Computation of Forward Kinematics by classics D-H tables  
 
@@ -105,7 +106,7 @@ class IK_LM(object):
         
         return A
 
-    def __comp_t_desired(self, target: np.array) -> np.array:
+    def __comp_t_desired(self, target: np.ndarray) -> np.ndarray:
         """
         Computation target Forward Kinematics D-H table
 
@@ -146,7 +147,7 @@ class IK_LM(object):
             ], [np.array([0,0,0,1])]
         ]
 
-    def __Angle_Axis(self, T_desired: np.array, T_current: np.array) -> np.array:
+    def __Angle_Axis(self, T_desired: np.ndarray, T_current: np.ndarray) -> np.ndarray:
         """
         Computation angle-axis distance
 
@@ -186,7 +187,7 @@ class IK_LM(object):
         
         return np.r_[np.array([Td-Ti]).T, a]
 
-    def __compute(self, angles: list, target_position: list, target_rotation: list) -> np.array:
+    def __compute(self, angles: list, target_position: list, target_rotation: list) -> np.ndarray:
         """
         Computation of Levenberg-Marquardt method.
 
