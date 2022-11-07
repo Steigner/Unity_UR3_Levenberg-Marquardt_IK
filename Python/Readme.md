@@ -1,23 +1,30 @@
-### how to start
+### How to start
 
 download folder *Inverse_Kinematics*
 
-install libraries from **pyproject.toml** or if you use poetry:
+Install libraries from **pyproject.toml**/**requirements.txt** or if you use poetry:
 ```console
 poetry install
 ```
 
-run server just type:
+Run server just type:
 ```console
-poetry run python .\server.py
+poetry run python server.py
 ```
 
-terminating the server is a bit more challenging, one way is:
+Terminating the server is a bit more challenging, one way is:
+
+Windows 
 ```console
 taskkill /F /IM python.exe 
 ```
 
-starting the generation of the Jacobian matrix into a .dill file can be done by:
+Linux
 ```console
-poetry run python .\Generate.py
+pkill python
+```
+
+Starting the generation of the Jacobian matrix into a .dill file can be done by:
+```console
+poetry run python generate.py
 ```

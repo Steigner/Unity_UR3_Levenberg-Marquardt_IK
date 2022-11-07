@@ -29,7 +29,7 @@ In the Unity project section, you can download the [**Robot.unitypackage**](http
 
 The next part is Python, additional libraries were used in the project, so if you use Poetry, you can easily get everything, if you use PIP, Conda or other package manager, just get the libraries from [**pyproject.toml**](https://github.com/Steigner/Unity_UR3_Levenberg-Marquardt/blob/main/Python/Inverse_Kinematics/pyproject.toml).
 
-:heavy_exclamation_mark: Run python first
+:heavy_exclamation_mark: Run Python first
 
 :heavy_exclamation_mark: Run Unity second
 
@@ -38,13 +38,13 @@ The next part is Python, additional libraries were used in the project, so if yo
 Collision detection was also provided within this project, if a collision occurs the movement is stopped and it is written to the Unity Console what joint was detected in the collision. You can see an example in the GIF. The same are included self collision.
 
 ## Demo Example
-The demo shows movement with and without collision detection. Within Unity, you can simply pin or unpin a cube in the game object Cube checkbox.
+The demo shows movement with and without collision detection. Within Unity, you can simply pin or unpin a cube in the GameObject Cube checkbox.
 
 ![Demo](https://github.com/Steigner/Unity_UR3_Levenberg-Marquardt/blob/main/docs/gif_unity.gif)
 
 ## 
 
-Finally, it should be mentioned that this is a project that has implemented simple rep/req communication.
+Finally, it should be mentioned that this is a project that has implemented simple Request / Response communication.
 
 ## :information_source: Contacts
 

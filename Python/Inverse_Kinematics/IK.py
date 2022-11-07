@@ -32,7 +32,6 @@ class IK_LM(object):
             a, angles = self.__compute(angles, p, r)
             out = np.r_[out, a]
 
-        print(type(out))
         return out
 
     def demo(self, target: int) -> list:
@@ -86,6 +85,7 @@ class IK_LM(object):
 
         :param th: joints angle
         """
+        # D-H parameters of UR3
         o = [pi/2, 0, 0, pi/2, -pi/2, 0]
         d = [0.1519, 0, 0, 0.11235, 0.08535, 0.0819]
         a = [0, -0.24365, -0.21325, 0, 0, 0]
