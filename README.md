@@ -48,6 +48,4 @@ Finally, it should be mentioned that this is a project that has implemented simp
 
 ## :information_source: Contacts
 
-Martin.Juricek1@vutbr.cz
-
 :mailbox: m.juricek@outlook.com
