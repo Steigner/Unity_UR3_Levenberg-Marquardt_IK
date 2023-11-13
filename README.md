@@ -45,7 +45,3 @@ The demo shows movement with and without collision detection. Within Unity, you 
 ## 
 
 Finally, it should be mentioned that this is a project that has implemented simple Request / Response communication.
-
-## :information_source: Contacts
-
-:mailbox: m.juricek@outlook.com
